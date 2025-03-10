@@ -9,4 +9,11 @@ You can install it on Debian/Ubuntu with the following command:
 sudo apt install stow
 ```
 
-After that, all you need to do is clone repository and run ```stow .``` command in it.
+Usage:
+```bash
+git clone https://github.com/The-Humble-Guy/dotfiles.git ${HOME}/dotfiles
+cd ${HOME}/dotfiles
+stow .
+```
+
+Let's fun!
