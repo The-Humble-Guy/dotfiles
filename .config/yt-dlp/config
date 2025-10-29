@@ -1,0 +1,9 @@
+#===DEFAULT SETTINGS===
+-U
+-f bv*+ba/b/best
+--merge-output-format mkv
+--add-metadata
+--write-info-json
+--embed-thumbnail
+--download-archive /home/alexander/WebArchive/Youtube/archive.txt
+-o "%(uploader)s/%(uploader)s. %(title)s [%(upload_date>%Y-%m-%d)s].%(ext)s"
