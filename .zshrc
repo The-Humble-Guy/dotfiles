@@ -10,7 +10,6 @@ export BC_ENV_ARGS="/home/alexander/.bc"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
 ZSH_THEME="bira"
 
 # Set list of themes to pick from when loading at random
@@ -73,7 +72,18 @@ ZSH_THEME="bira"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#
+# Custom installed plugins:
+# 1. git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+# 2. git clone https://github.com/Myzel394/zsh-copilot.git ~/.oh-my-zsh/custom/plugins/zsh-copilot
+plugins=(
+  colored-man-pages
+  extract
+  git
+  rsync
+  timer
+  universalarchive
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,6 +112,7 @@ source $ZSH/oh-my-zsh.sh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
+alias battery="upower -i $(upower -e | grep BAT)"
 alias l="ls -lah"
 alias e="nvim"
 alias clc="clear"
