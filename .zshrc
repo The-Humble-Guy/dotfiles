@@ -5,6 +5,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 export TERM_THEME="GRUVBOX"
 export BC_ENV_ARGS="/home/alexander/.bc"
+# 0 - no compression, 9 - max compression
+export ZIPOPT=-0
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
